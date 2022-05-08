@@ -1,6 +1,25 @@
-<header>
-    <a href="{% url 'home' %}">Home</a> |
-    <a href="{% url 'about' %}">About</a>
-</header>
-{% block content %}
-{% endblock content %}
+{% load static %}
+
+<html>
+
+<head>
+    <title>Engineered</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="styleshee\
+t">
+</head>
+
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}">Engineered&nbsp</a></h1>
+        <h1><a href="{% url 'about' %}">About&nbsp</a></h1>
+        <h1><a href="{% url 'post' %}">Posts</a></h1>
+
+    </header>
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+</html>
