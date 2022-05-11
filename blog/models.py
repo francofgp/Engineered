@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
+from taggit.managers import TaggableManager
 
 STATUS = (
     (0, "Draft"),
@@ -18,7 +19,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     image = models.ImageField(upload_to='post/images/',
                               default='../static/images/blog_post.jpg')
-
+    tags = TaggableManager()
     slug = models.SlugField(unique=True,
                             editable=False)
 

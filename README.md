@@ -11,7 +11,7 @@ python manage.py makemigrations
 python manage.py migrate
 
 python manage.py createsuperuser #Optional if you want to create posts
-
+python manage.py tailwind install
 python manage.py runserver
 
 ```

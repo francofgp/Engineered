@@ -136,6 +136,17 @@ python-versions = ">=3.7"
 Django = ">=3.2"
 
 [[package]]
+name = "django-taggit"
+version = "3.0.0"
+description = "django-taggit is a reusable Django application for simple tagging."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=3.2"
+
+[[package]]
 name = "django-tailwind"
 version = "3.1.1"
 description = "Tailwind CSS Framework for Django projects"
@@ -317,7 +328,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "1d0a364bf1c5fe7ddbd0accab4da5c6cb6eb18b2e660d551d67fc9990fe2ed16"
+content-hash = "573f7e60403136237f4fd3d03bcb38a3fc88371eb6a479d87bde928021a7fb1a"
 
 [metadata.files]
 arrow = [
@@ -367,6 +378,10 @@ django = [
 django-browser-reload = [
     {file = "django-browser-reload-1.4.0.tar.gz", hash = "sha256:ad26f004b9769e5ad8502558554df6f6750ac51a9db84c493f0e829fe0077c6f"},
     {file = "django_browser_reload-1.4.0-py3-none-any.whl", hash = "sha256:c9f879098c6461310a71d1a6ce49ffcc45782079b3b144fcb2aab7700a4371c8"},
+]
+django-taggit = [
+    {file = "django-taggit-3.0.0.tar.gz", hash = "sha256:e645b8e3dd4f85989d5ef5c5a3d5ebbe5badf5d1e51b53e42d0af726240b00b9"},
+    {file = "django_taggit-3.0.0-py3-none-any.whl", hash = "sha256:ca2df20399a11321db75988404afb640a08eff61e52bde35f6c16f307004ec9e"},
 ]
 django-tailwind = [
     {file = "django-tailwind-3.1.1.tar.gz", hash = "sha256:3791d24f38afd9e0125e2a7e71478cd0981ac07033edd52a6ebae65c3daa5f28"},
