@@ -1,6 +1,29 @@
 # Engineered
 
 
-## acknowledgment
+## Run the application
 
-Default post photo:Photo by Jessica Lewis Creative from Pexels
+```bash
+poetry install
+poetry shell
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser #Optional if you want to create posts
+
+python manage.py runserver
+
+```
+
+In a seperate  console, if you want to edit the css with tailwind, run the following command:
+
+```bash
+python manage.py tailwind start
+```
+
+If you don't run the command above, the css assets of tailwind will not be updated, thus you wont see any changes in your browser
+
+## Acknowledgment
+
+- Default post photo: 📷 by Jessica Lewis Creative from Pexels

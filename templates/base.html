@@ -1,12 +1,18 @@
 {% load static %}
+{% load tailwind_tags %}
 
 <html>
 
 <head>
+
     <title>Engineered</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="styleshee\
-t">
+    {% tailwind_css %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--  <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
 </head>
 
 <body>
@@ -17,6 +23,7 @@ t">
 
     </header>
     <div>
+
         {% block content %}
         {% endblock content %}
     </div>
