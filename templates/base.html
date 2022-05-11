@@ -9,15 +9,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
+			.font-family-karla {
+				font-family: karla;
+			}
+		</style>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+			integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+			crossorigin="anonymous"
+		></script>
+
 		<!--  <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
 	</head>
 
-	<body>
-		<header>
-			<h1><a href="{% url 'home' %}">Engineered&nbsp</a></h1>
-			<h1><a href="{% url 'about' %}">About&nbsp</a></h1>
-			<h1><a href="{% url 'post' %}">Posts</a></h1>
-		</header>
+	<body class="bg-white font-family-karla">
+		{% include "navbar.html" %} {% include "home_header.html" %}
+
 		<div>{% block content %} {% endblock content %}</div>
+
+		<!-- Posts Section -->
+
+		{% include "footer.html" %}
 	</body>
 </html>

@@ -4,8 +4,11 @@ from django.views.generic import TemplateView, ListView, DetailView
 from blog.models import Post
 
 
-class HomePageView(TemplateView):
+class HomePageView(ListView):
     template_name = 'home.html'
+    model = Post
+    queryset = Post.objects.all()[:3]
+    context_object_name = 'posts'
 
 
 class AboutPageView(TemplateView):
