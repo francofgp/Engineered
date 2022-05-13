@@ -16,13 +16,28 @@
 				font-family: karla;
 			}
 		</style>
+
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
 			integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
 			crossorigin="anonymous"
 		></script>
 
-		<!--  <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
+		<link
+			rel="stylesheet"
+			href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/monokai-sublime.min.css"
+		/>
+		{% comment %}
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+		　-->Change this {% endcomment %} {% comment %}
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/dracula.min.css" />
+		{% endcomment %}
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+		<script>
+			hljs.initHighlightingOnLoad();
+		</script>
+
+		<link rel="stylesheet" href="{% static 'css/base.css' %}" />
 	</head>
 
 	<body class="bg-white font-family-karla">

@@ -1,47 +1,55 @@
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+.unreset blockquote {
+    background: #f9f9f9;
+    border-left: 0.65em solid #ccc;
+    margin: 1.5em 1em;
+    padding: 0.5em 1em;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+.unreset blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+.unreset blockquote p {
+    display: inline;
 }
 
-header {
-    border-bottom: 1px solid #999;
-    margin-bottom: 2rem;
-    display: flex;
+.unreset thead tr {
+    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+    color: #ffffff;
+    text-align: left;
 }
 
-header h1 a {
-    color: red;
-    text-decoration: none;
+.unreset th,
+.unreset td {
+    padding: 12px 15px;
 }
 
-.nav-left {
-    margin-right: auto;
+.unreset tbody tr {
+    border-bottom: thin solid #dddddd;
 }
 
-.nav-right {
-    display: flex;
-    padding-top: 2rem;
+.unreset tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
 
-.post-entry {
-    margin-bottom: 2rem;
+.unreset tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
-.post-entry h2 {
-    margin: 0.5rem 0;
-}
 
-.post-entry h2 a,
-.post-entry h2 a:visited {
-    color: blue;
-    text-decoration: none;
-}
 
-.post-entry p {
-    margin: 0;
-    font-weight: 400;
-}
+/*  .unreset img{
+    max-width: none !important ;
+    height: none !important;
+    border-radius: .25rem !important;
+}  */
 
-.post-entry h2 a:hover {
-    color: red;
-}
+/* .unreset .image-center{
+    display:block ;
+    margin:auto ;
+
+} */

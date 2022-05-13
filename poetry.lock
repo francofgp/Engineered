@@ -136,6 +136,32 @@ python-versions = ">=3.7"
 Django = ">=3.2"
 
 [[package]]
+name = "django-ckeditor"
+version = "6.4.0"
+description = "Django admin CKEditor integration."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+Django = ">=3.2"
+django-js-asset = ">=1.2.2"
+
+[[package]]
+name = "django-js-asset"
+version = "2.0.0"
+description = "script tag with additional attributes for django.forms.Media"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=2.2"
+
+[package.extras]
+tests = ["coverage"]
+
+[[package]]
 name = "django-taggit"
 version = "3.0.0"
 description = "django-taggit is a reusable Django application for simple tagging."
@@ -328,7 +354,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "573f7e60403136237f4fd3d03bcb38a3fc88371eb6a479d87bde928021a7fb1a"
+content-hash = "ac7d22a877da9de3393618047bda2e3158373ca4d31e0776ae24dcdf9f193e09"
 
 [metadata.files]
 arrow = [
@@ -378,6 +404,14 @@ django = [
 django-browser-reload = [
     {file = "django-browser-reload-1.4.0.tar.gz", hash = "sha256:ad26f004b9769e5ad8502558554df6f6750ac51a9db84c493f0e829fe0077c6f"},
     {file = "django_browser_reload-1.4.0-py3-none-any.whl", hash = "sha256:c9f879098c6461310a71d1a6ce49ffcc45782079b3b144fcb2aab7700a4371c8"},
+]
+django-ckeditor = [
+    {file = "django-ckeditor-6.4.0.tar.gz", hash = "sha256:30b7d1d8cfa37524f9283ccc0dbb86f98edc952b47d38abbccfda21f966f185d"},
+    {file = "django_ckeditor-6.4.0-py3-none-any.whl", hash = "sha256:b1755e1e654c72383f8682de86a98b7ede144de36d82f3566ad45da8f7aa5185"},
+]
+django-js-asset = [
+    {file = "django_js_asset-2.0.0-py3-none-any.whl", hash = "sha256:86f9f300d682537ddaf0487dc2ab356581b8f50c069bdba91d334a46e449f923"},
+    {file = "django_js_asset-2.0.0.tar.gz", hash = "sha256:adc1ee1efa853fad42054b540c02205344bb406c9bddf87c9e5377a41b7db90f"},
 ]
 django-taggit = [
     {file = "django-taggit-3.0.0.tar.gz", hash = "sha256:e645b8e3dd4f85989d5ef5c5a3d5ebbe5badf5d1e51b53e42d0af726240b00b9"},
