@@ -151,6 +151,7 @@ NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_CONFIGS = {
     'default': {
+        'codeSnippet_theme': 'monokai',
 
         # 'skin': 'moono',
         # # 'skin': 'office2013',
