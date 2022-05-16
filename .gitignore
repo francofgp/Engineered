@@ -168,3 +168,4 @@ cython_debug/
 # Media Folder in Django
 media/post
 media/uploads
+.env

@@ -148,6 +148,14 @@ Django = ">=3.2"
 django-js-asset = ">=1.2.2"
 
 [[package]]
+name = "django-dotenv"
+version = "1.4.2"
+description = "foreman reads from .env. manage.py doesn't. Let's fix that."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "django-js-asset"
 version = "2.0.0"
 description = "script tag with additional attributes for django.forms.Media"
@@ -354,7 +362,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "ac7d22a877da9de3393618047bda2e3158373ca4d31e0776ae24dcdf9f193e09"
+content-hash = "88ed8b12ac351674ccca23f2ef6bf16b6e2cd7060d15846abeef4f9bd0dbd4fa"
 
 [metadata.files]
 arrow = [
@@ -408,6 +416,10 @@ django-browser-reload = [
 django-ckeditor = [
     {file = "django-ckeditor-6.4.0.tar.gz", hash = "sha256:30b7d1d8cfa37524f9283ccc0dbb86f98edc952b47d38abbccfda21f966f185d"},
     {file = "django_ckeditor-6.4.0-py3-none-any.whl", hash = "sha256:b1755e1e654c72383f8682de86a98b7ede144de36d82f3566ad45da8f7aa5185"},
+]
+django-dotenv = [
+    {file = "django-dotenv-1.4.2.tar.gz", hash = "sha256:3812bb0f4876cf31f902aad140f0645e120e51ee30eb7c40c22050f58a0e4adb"},
+    {file = "django_dotenv-1.4.2-py2.py3-none-any.whl", hash = "sha256:a9b1b40a70bd321acd231926acedb9bd2c5e873e33a1873b34a7276d196a765e"},
 ]
 django-js-asset = [
     {file = "django_js_asset-2.0.0-py3-none-any.whl", hash = "sha256:86f9f300d682537ddaf0487dc2ab356581b8f50c069bdba91d334a46e449f923"},
