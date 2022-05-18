@@ -24,6 +24,16 @@ python manage.py tailwind start
 
 If you don't run the command above, the css assets of tailwind will not be updated, thus you wont see any changes in your browser
 
+
+
+## Build
+
+```bash
+poetry export -f requirements.txt -o requirements.txt
+python manage.py tailwind build
+
+```
+
 ## Acknowledgment
 
 - Default post photo: 📷 by Jessica Lewis Creative from Pexels
