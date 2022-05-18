@@ -32,6 +32,14 @@ If you don't run the command above, the css assets of tailwind will not be updat
 poetry export -f requirements.txt -o requirements.txt
 python manage.py tailwind build
 
+
+```
+in python anywhere open bash console and
+```bash
+git clone https://github.com/francofgp/Engineered.git
+# instal poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
 ```
 
 ## Acknowledgment
