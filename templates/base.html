@@ -1,40 +1,40 @@
 {% load static %} {% load tailwind_tags %}
 
 <html>
+	<head>
+		<title>Engineered</title>
+		{% tailwind_css %}
 
-<head>
-	<title>Engineered</title>
-	{% tailwind_css %}
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
 
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="{% static 'js/util/highlight.11.5.1.min.js' %}"></script>
+		<script src="{% static 'js/util/font-awesome.5.13.0.min.js' %}"></script>
 
-	<script src="{% static 'js/lib/font-awesome.min.js' %}"></script>
-	<script src="{% static 'js/lib/highlight.min.js' %}"></script>
-	<script defer src="{% static 'js/lib/alpine3.min.js' %}"></script>
-	<link rel="stylesheet" href="{% static 'css/base.css' %}" />
-	<link rel="stylesheet" href="{% static 'css/ckeditor/themes/github-dark.min.css' %}" />
+		<script defer src="{% static 'js/util/alpine3.10.2.min.js' %}"></script>
+		<link rel="stylesheet" href="{% static 'css/base.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/ckeditor/themes/github-dark.min.css' %}" />
 
-	<style>
-		@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
 
-		.font-family-karla {
-			font-family: karla;
-		}
-	</style>
-	<script>hljs.initHighlightingOnLoad();</script>
+			.font-family-karla {
+				font-family: karla;
+			}
+		</style>
+		<script>
+			hljs.initHighlightingOnLoad();
+		</script>
+	</head>
 
-</head>
+	<body class="bg-white font-family-karla">
+		{% include "navbar.html" %} {% include "home_header.html" %}
 
-<body class="bg-white font-family-karla">
-	{% include "navbar.html" %} {% include "home_header.html" %}
+		<div>{% block content %} {% endblock content %}</div>
 
-	<div>{% block content %} {% endblock content %}</div>
+		<!-- Posts Section -->
 
-	<!-- Posts Section -->
-
-	{% include "footer.html" %}
-</body>
-
+		{% include "footer.html" %}
+	</body>
 </html>
