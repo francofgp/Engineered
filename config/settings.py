@@ -155,6 +155,7 @@ NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_CONFIGS = {
     'default': {
+        # Theme for the admin panel, for the actually post see the base.html
         'codeSnippet_theme': 'monokai',
 
         # 'skin': 'moono',

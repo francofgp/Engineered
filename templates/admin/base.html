@@ -1,4 +1,4 @@
-{% extends "admin/base.html" %} 
+{% extends "admin/base.html" %}
 <!-- override the css to make the django admin white -->
 {% load static %} {% block extrastyle %} {{ block.super }}
 <style>
@@ -41,8 +41,10 @@
 			--message-warning-bg: #ffc;
 			--message-error-bg: #ffefef;
 
-			--darkened-bg: #f8f8f8; /* A bit darker than --body-bg */
-			--selected-bg: #e4e4e4; /* E.g. selected table cells */
+			--darkened-bg: #f8f8f8;
+			/* A bit darker than --body-bg */
+			--selected-bg: #e4e4e4;
+			/* E.g. selected table cells */
 			--selected-row: #ffc;
 
 			--button-fg: #fff;
@@ -50,7 +52,8 @@
 			--button-hover-bg: #609ab6;
 			--default-button-bg: var(--secondary);
 			--default-button-hover-bg: #205067;
-			--close-button-bg: #888; /* Previously #bbb, contrast 1.92 */
+			--close-button-bg: #888;
+			/* Previously #bbb, contrast 1.92 */
 			--close-button-hover-bg: #747474;
 			--delete-button-bg: #ba2121;
 			--delete-button-hover-bg: #a41515;
