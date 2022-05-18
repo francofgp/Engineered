@@ -37,8 +37,13 @@ python manage.py tailwind build
 in python anywhere open bash console and
 ```bash
 git clone https://github.com/francofgp/Engineered.git
-# instal poetry
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
+mkvirtualenv --python=/usr/bin/python3.9 engineered # engineered is the name of your env
+cd Engineered/
+pip install -r requirements.txt
+
+# Go to web in pythonanywhere, create new webapp, with manual configuration
+# Add you virtualenv name, in my case engineered
 
 ```
 

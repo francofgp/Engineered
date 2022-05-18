@@ -91,7 +91,7 @@
       
         ul,
         menu {
-          @apply list-disc my-1 pl-10;
+          @apply list-disc my-4 pl-10;
         }
       
         ol {
