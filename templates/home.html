@@ -1,6 +1,5 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container mx-auto flex flex-wrap py-6">
-
 	<section class="w-full md:w-2/3 flex flex-col items-center px-3">
 		<p class="text-3xl float-left hover:text-blue-700 font-semibold pb-2">Latest posts</p>
 
@@ -8,24 +7,28 @@
 
 		<article class="flex flex-col shadow my-4">
 			<!-- Article Image -->
-			<a href="{% url 'post_detail' post.slug %}" class="hover:opacity-75"> <img src="{{ post.image.url }}" />
+			<a href="{% url 'post_detail' post.slug %}" class="hover:opacity-75">
+				<img src="{{ post.image.url }}" />
 			</a>
 			<div class="bg-white flex flex-col justify-start p-6">
 				<div class="grid grid-cols-12">
 					{% for tag in post.tags.all %}
-					<a href="#"
-						class="text-blue-700 hover:text-blue-500 text-sm font-bold uppercase pb-4 inline-table">{{tag}}</a>
+					<a href="#" class="text-blue-700 hover:text-blue-500 text-sm font-bold uppercase pb-4 inline-table"
+						>{{tag}}</a
+					>
 					{% endfor %}
 				</div>
 				<a href="{% url 'post_detail' post.slug %}" class="text-3xl font-bold hover:text-gray-700 pb-4">
-					{{post.title }}</a>
+					{{post.title }}</a
+				>
 				<p href="#" class="text-sm pb-3">
 					By <a href="#" class="font-semibold hover:text-gray-800">{{ post.author }}</a>, Published on
 					{{post.created_on |date:"M d, Y" }}
 				</p>
 				<a href="#" class="pb-6">{{ post.content|safe|striptags|truncatechars:100}}...</a>
-				<a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i
-						class="fas fa-arrow-right"></i></a>
+				<a href="#" class="uppercase text-gray-800 hover:text-black"
+					>Continue Reading <i class="fas fa-arrow-right"></i
+				></a>
 			</div>
 		</article>
 
@@ -33,12 +36,12 @@
 
 		<!-- Pagination -->
 		<div class="flex items-center py-8">
-
-			<a href="{% url 'post' %}" class="h-10  font-semibold p-2
-				 text-gray-800 hover:bg-blue-600 
-				 hover:text-white text-sm flex items-center justify-center">
-				Load More<i class="fas fa-arrow-right ml-2"></i></a>
-
+			<a
+				href="{% url 'post' %}"
+				class="h-10 font-semibold p-2 text-gray-800 hover:bg-blue-600 hover:rounded hover:text-white text-sm flex items-center justify-center"
+			>
+				Load More<i class="fas fa-arrow-right ml-2"></i
+			></a>
 		</div>
 		<!-- <div class="flex items-center py-8">
 			<a
