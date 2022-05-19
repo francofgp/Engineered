@@ -7,12 +7,8 @@
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<script src="{% static 'js/util/highlight.11.5.1.min.js' %}"></script>
-		<script src="{% static 'js/util/font-awesome.5.13.0.min.js' %}"></script>
-
-		<script defer src="{% static 'js/util/alpine3.10.2.min.js' %}"></script>
 		<link rel="stylesheet" href="{% static 'css/base.css' %}" />
 		<link rel="stylesheet" href="{% static 'css/ckeditor/themes/github-dark.min.css' %}" />
 
@@ -23,9 +19,6 @@
 				font-family: karla;
 			}
 		</style>
-		<script>
-			hljs.highlightAll();
-		</script>
 	</head>
 
 	<body class="bg-white font-family-karla">
@@ -36,5 +29,12 @@
 		<!-- Posts Section -->
 
 		{% include "footer.html" %}
+
+		<script src="{% static 'js/util/highlight.11.5.1.min.js' %}"></script>
+		<script src="{% static 'js/util/font-awesome.5.13.0.min.js' %}"></script>
+		<script defer src="{% static 'js/util/alpine3.10.2.min.js' %}"></script>
+		<script>
+			hljs.highlightAll();
+		</script>
 	</body>
 </html>
