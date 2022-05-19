@@ -12,26 +12,29 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-from tkinter import ALL
+
+# To keep secret keys in environment variables
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get(
-    "SECRET_KEY", 'django-insecure-i-&k_-8*o_3&xv+i*2uhad*i26tj!!kc)0^+5!r+xe#e3e-=7o')
+SECRET_KEY = str(os.getenv(
+    'SECRET_KEY', 'django-insecure-i-&k_-8*o_3&xv+i*2uhad*i26tj!!kc)0^+5!r+xe#e3e-=7o'))
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = str(os.environ.get('DEBUG')) == '1'  # 1 == True
+DEBUG = str(os.getenv('DEBUG')) == '1'  # 1 == True
 
 ALLOWED_HOSTS = []
 if not DEBUG:
-    ALLOWED_HOSTS += [os.environ.get("ALLOWED_HOST")]
-    print(ALLOWED_HOSTS)
+    ALLOWED_HOSTS += [os.getenv("ALLOWED_HOST")]
 
 # Application definition
 
@@ -129,7 +132,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+STATIC_ROOT = str(os.getenv(
+    'STATIC_ROOT', str(BASE_DIR.joinpath('staticfiles'))))
 STATICFILES_DIRS = [
     str(BASE_DIR.joinpath('static'))
 ]
@@ -141,7 +145,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 MEDIA_URL = '/media/'  # new
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = str(os.getenv(
+    'MEDIA_ROOT', os.path.join(BASE_DIR, 'media')))
 
 # Tailwind settings
 TAILWIND_APP_NAME = 'theme'
