@@ -12,18 +12,18 @@ Engineered is my personal blog made with Django, where I will be sharing my jour
 
 </div>
 
-|   Vocabulary  | Flashcards    | Export    |
-| :----:        | :----:        | :----:    |
-| Each user can save words in their own vocabulary. | Vocabulary review through flashcards. | Possibility to export the vocabulary to PDF.| 
-
 
 
 ## Table of contents
 - [Engineered](#engineered)
   - [Table of contents](#table-of-contents)
   - [Run the application](#run-the-application)
+  - [Features](#features)
   - [Showcase](#showcase)
+    - [Desktop](#desktop)
+    - [Mobile](#mobile)
   - [Acknowledgment](#acknowledgment)
+  - [TODO](#todo)
   - [License](#license)
 
 
@@ -68,11 +68,53 @@ python manage.py tailwind start
 If you don't run the command above, the css assets of tailwind will not be updated when you edit the files, thus you will not see any changes in your browser, and you will not have hot reload either.
 
 
+## Features
+
+|   Home  | About    |  Create Posts   |
+| :----:        | :----:        | :----:    |
+| There is a home section that shows the last three posts, and your twitter feed | About section to talk about yourself. | Create your posts using an intuitive editor, with code snippets and images 😎.| 
+
 
 ## Showcase
 
+### Desktop
+
 **Home**
+
 ![Home image](https://i.imgur.com/KMqBu40.png)
+
+**All Posts**
+
+![all post view](https://user-images.githubusercontent.com/70602890/169548205-d0cafab4-bc3b-4de8-83c0-c37fe5c5a03d.png)
+
+**Post**
+
+![Post view](https://user-images.githubusercontent.com/70602890/169549079-d5823a06-0ccc-413b-a4ef-f3d4ca9e7c6b.png)
+
+**About**
+
+![about](https://user-images.githubusercontent.com/70602890/169550147-9e78c6ad-e85d-42e1-9adf-63c5da949f00.png)
+
+**Create post from the admin site**
+
+![image](https://user-images.githubusercontent.com/70602890/169549423-db07b74a-2f48-449e-b7b1-88e687134759.png)
+
+![screencapture-francofgp-pythonanywhere-admin-blog-post-1-change-2022-05-20-11_25_45](https://user-images.githubusercontent.com/70602890/169549296-525f97c3-3cb7-43e3-8e2a-87428f229c42.png)
+
+### Mobile
+
+**Home**
+
+![home mobile](https://user-images.githubusercontent.com/70602890/169550256-54e22510-e7da-41a1-bdfc-3ce762c2fdc7.png)
+
+**Post**
+
+![mobile view](https://user-images.githubusercontent.com/70602890/169550348-2883ea9d-e029-467d-b926-cae06b8b88ae.png)
+
+**About**
+
+![about mobile](https://user-images.githubusercontent.com/70602890/169550631-033a2767-6b81-4f41-b712-c97cfe1a5683.png)
+
 
 ## Acknowledgment
 - [Django](https://www.djangoproject.com/) The web framework for perfectionists with deadlines.
@@ -84,6 +126,14 @@ If you don't run the command above, the css assets of tailwind will not be updat
 - [Django](https://www.djangoproject.com/) The web framework for perfectionists with deadlines.
 - [python-dotenv](https://github.com/theskumar/python-dotenv) Reads key-value pairs from a .env file and can set them as environment variables. It helps in developing applications following the 12-factor principles.
 - Default post photo 📷 by [Jessica Lewis Creative](https://www.pexels.com/es-es/@thepaintedsquare/) from Pexels
+
+
+## TODO
+
+- Search function
+- Click on tag an see al related posts
+- Edit posts in the web site itself rather than in the admin site
+- Comments section
 
 ## [License](#license)
 
