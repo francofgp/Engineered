@@ -22,6 +22,7 @@ Engineered is my personal blog made with Django, where I will be sharing my jour
   - [Showcase](#showcase)
     - [Desktop](#desktop)
     - [Mobile](#mobile)
+    - [Video](#video)
   - [Acknowledgment](#acknowledgment)
   - [TODO](#todo)
   - [License](#license)
@@ -114,6 +115,12 @@ If you don't run the command above, the css assets of tailwind will not be updat
 **About**
 
 ![about mobile](https://user-images.githubusercontent.com/70602890/169550631-033a2767-6b81-4f41-b712-c97cfe1a5683.png)
+
+### Video
+
+https://user-images.githubusercontent.com/70602890/169554468-a37adae9-3f96-46b5-9191-01872619b88f.mp4
+
+
 
 
 ## Acknowledgment
