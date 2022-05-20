@@ -41,7 +41,14 @@
 }
 
 
-
+/* 
+Sometimes, when you're using AlpineJS for a part of your template,
+there is a "blip" where you might see your uninitialized
+template after the page loads, but before Alpine loads.
+ */
+[x-cloak]{
+    display:none
+}
 /*  .unreset img{
     max-width: none !important ;
     height: none !important;
