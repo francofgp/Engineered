@@ -24,7 +24,6 @@ Engineered is my personal blog made with Django, where I will be sharing my jour
     - [Mobile](#mobile)
     - [Video](#video)
   - [Acknowledgment](#acknowledgment)
-  - [TODO](#todo)
   - [License](#license)
 
 
@@ -135,12 +134,7 @@ https://user-images.githubusercontent.com/70602890/169554468-a37adae9-3f96-46b5-
 - Default post photo 📷 by [Jessica Lewis Creative](https://www.pexels.com/es-es/@thepaintedsquare/) from Pexels
 
 
-## TODO
 
-- Search function
-- Click on tag an see al related posts
-- Edit posts in the web site itself rather than in the admin site
-- Comments section
 
 ## [License](#license)
 
